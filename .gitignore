@@ -1,0 +1,27 @@
+# --- Secrets: tokens and auth artifacts (NEVER commit) ---
+msal_cache.json
+msal_flow.json
+msal_code.txt
+device_flow.json
+token_cache.json
+full_result.json
+auth_output.txt
+*.enc
+.env
+.env.*
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Runtime state ---
+*.log

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://catalog.msh.team/misc/kimi.plugin.schema.json",
+  "name": "neuro-email",
+  "version": "0.2.0-dev",
+  "description": "Microsoft 365 email integration with OAuth2 for Kimi Work",
+  "keywords": ["email", "outlook", "microsoft-365", "oauth2", "imap", "smtp"],
+  "author": "FlacH7",
+  "license": "MIT",
+  "skillInstructions": "",
+  "interface": {
+    "displayName": "Neuro Email",
+    "shortDescription": "Use your Microsoft 365 email inside Kimi",
+    "longDescription": "Microsoft 365 email integration with OAuth2 for Kimi Work. Read your inbox, list folders, search messages, and send email via IMAP/SMTP with XOAUTH2.",
+    "developerName": "FlacH7",
+    "websiteURL": "",
+    "iconUrl": "",
+    "category": "PRODUCTIVITY"
+  },
+  "skills": "./skills/",
+  "sessionStart": {
+    "skill": "neuro-email"
+  },
+  "hooks": [
+    {
+      "event": "SessionStart",
+      "command": "bash ./hooks/session-start.sh"
+    }
+  ]
+}
